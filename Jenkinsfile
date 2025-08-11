@@ -21,6 +21,16 @@ pipeline {
 				echo 'Jar file created !'
 			}
 		}
+		
+		stage('docker image build'){
+			steps{
+				echo 'Building the docker image using the JAR file'
+				sh 'sudo docker build -t prasanna0218/${IMAGE_NAME}:${BUILD_NUMBER}'
+				echo 'docker Image is created !'
+			}
+		}
+		
+		
 	}
 	
 }
