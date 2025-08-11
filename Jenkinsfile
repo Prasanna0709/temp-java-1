@@ -2,6 +2,9 @@ pipeline {
 	
 	agent any
 	
+	environment{
+	}
+	
 	stages{
 		
 		stage ('Checkout code from git'){
