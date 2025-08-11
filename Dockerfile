@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk-alpine
 
-COPY target/example-deployment-1.0.0-SNAPSHOT-runner.jar example-deployment.jar
+COPY target/quarkus-app/quarkus-run.jar example-deployment.jar
 
 EXPOSE 8081
 
