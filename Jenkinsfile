@@ -16,7 +16,7 @@ pipeline {
 				sh 'mvn clean package'
 				echo 'Jar file created !'
 			}
-		}
+		}		
 		
 		stage('docker image build'){
 			steps{
@@ -25,7 +25,6 @@ pipeline {
 				echo 'docker Image is created !'
 			}
 		}
-		
 		
 	}
 	
