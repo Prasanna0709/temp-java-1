@@ -18,7 +18,7 @@ pipeline {
 		stage ('maven build'){
 			steps{
 				echo 'Building the Jar file from the Application code ...'
-				sh 'mvn clean package'
+				sh 'mvn clean package -Dquarkus.package.type=uber-jar'
 				echo 'Jar file created !'
 			}
 		}		
