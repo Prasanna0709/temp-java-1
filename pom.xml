@@ -76,6 +76,18 @@
 			<groupId>io.quarkus</groupId>
 			<artifactId>quarkus-mongodb-panache</artifactId>
 		</dependency>
+
+		<!-- Swagger api json formatting dependency -->
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-smallrye-openapi</artifactId>
+		</dependency>
+
+		<!-- Swagger UI dependency -->
+		<dependency>
+			<groupId>io.quarkus</groupId>
+			<artifactId>quarkus-swagger-ui</artifactId>
+		</dependency>
     </dependencies>
 
     <build>
